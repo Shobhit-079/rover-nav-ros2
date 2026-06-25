@@ -1,0 +1,8 @@
+digraph G {
+"mars_rover/lidar_link" -> "mars_rover/lidar_link/lidar_sensor"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"mars_rover/odom" -> "mars_rover/chassis"[label=" Broadcaster: default_authority\nAverage rate: 29.826\nBuffer length: 2.414\nMost recent transform: 11.289\nOldest transform: 8.875\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1782327170.2447116"[ shape=plaintext ] ;
+}->"mars_rover/odom";
+}
